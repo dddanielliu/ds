@@ -10,7 +10,7 @@ int main(){
     srand( time(0) );
     int random_number = rand() % 10000;
     // outfile.open("a1.csv", std::ios_base::app);
-    outfile.open("a3.csv", std::ios::trunc);
+    outfile.open("b3.csv", std::ios::trunc);
     outfile << "data_structure,k,";
     for (int i=1; i<=10; i++){
         outfile << "test" << i;
