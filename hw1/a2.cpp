@@ -25,11 +25,11 @@ int main(){
         cerr << "k=" << k << endl;
         for (int test_id=1; test_id<=10; test_id++){
             cerr << "test_id=" << test_id << endl;
-            Dynamic_Array_plus_plus Dynarr;
+            Dynamic_Array_plus_plus Dynarr_plus_plus;
             clock_t begin_time = clock();
             for (int i=1; i<=n; i++){
                 random_number = rand() % 10000;
-                Dynarr.push_back(random_number);
+                Dynarr_plus_plus.push_back(random_number);
             }
             clock_t used_time = clock() - begin_time;
             outfile << static_cast<double>(used_time) / CLOCKS_PER_SEC;
